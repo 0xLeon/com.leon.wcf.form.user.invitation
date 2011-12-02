@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/event-listener.xsd">
+	<import>
+		<eventlistener>
+			<eventClassName>RegisterForm</eventClassName>
+			<eventName>readParameters</eventName>
+			<listenerClassFile>lib/system/event/listener/RegisterFormInviteListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>RegisterForm</eventClassName>
+			<eventName>readFormParameters</eventName>
+			<listenerClassFile>lib/system/event/listener/RegisterFormInviteListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>RegisterForm</eventClassName>
+			<eventName>assignVariables</eventName>
+			<listenerClassFile>lib/system/event/listener/RegisterFormInviteListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>RegisterForm</eventClassName>
+			<eventName>show</eventName>
+			<listenerClassFile>lib/system/event/listener/RegisterFormInviteListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>RegisterForm</eventClassName>
+			<eventName>validate</eventName>
+			<listenerClassFile>lib/system/event/listener/RegisterFormInviteListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>RegisterForm</eventClassName>
+			<eventName>saved</eventName>
+			<listenerClassFile>lib/system/event/listener/RegisterFormInviteListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>UserDeleteAction</eventClassName>
+			<eventName>execute</eventName>
+			<listenerClassFile>lib/system/event/listener/UserDeleteActionInvitationDelete.class.php</listenerClassFile>
+			<environment>admin</environment>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>UserDeleteAction</eventClassName>
+			<eventName>executed</eventName>
+			<listenerClassFile>lib/system/event/listener/UserDeleteActionInvitationDelete.class.php</listenerClassFile>
+			<environment>admin</environment>
+		</eventlistener>
+	</import>
+</data>

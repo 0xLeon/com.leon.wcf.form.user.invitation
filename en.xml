@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.user.invitation"><![CDATA[Invitations]]></item>
+		<item name="wcf.acp.menu.link.user.invitation.view"><![CDATA[List invitations]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.invitation_active"><![CDATA[Activate invitation of friends]]></item>>
+		<item name="wcf.acp.option.invitation_active.description"><![CDATA[Allows your users to invite their friends.]]></item>
+		<item name="wcf.acp.option.invitation_necessary"><![CDATA[Register by invitation only]]></item>
+		<item name="wcf.acp.option.invitation_necessary.description"><![CDATA[New users can only register if their were invited, when you activate this option.]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.admin.invitation"><![CDATA[Invitations]]></item>
+		<item name="wcf.acp.group.option.category.admin.invitation.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.admin.invitation.canDeleteInvitation"><![CDATA[Can delete invitations]]></item>
+		<item name="wcf.acp.group.option.admin.invitation.canDeleteInvitation.description"><![CDATA[Members of this group can delete invitations.]]></item>
+		<item name="wcf.acp.group.option.category.user.invitation"><![CDATA[Invitations]]></item>
+		<item name="wcf.acp.group.option.category.user.invitation.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.user.invitation.canInvite"><![CDATA[Can invite friends]]></item>
+		<item name="wcf.acp.group.option.user.invitation.canInvite.description"><![CDATA[Members of this group can invite their friends.]]></item>
+	</category>
+	<category name="wcf.acp.invitation">
+		<item name="wcf.acp.invitation.view"><![CDATA[Invitations]]></item>
+		<item name="wcf.acp.invitation.view.count"><![CDATA[There is a total of {#$items} invitation{if $items != 1}s{/if}]]></item>
+		<item name="wcf.acp.invitation.count.noEntries"><![CDATA[There are currently no invitationss available.]]></item>
+		<item name="wcf.acp.invitation.delete"><![CDATA[Delete invitation]]></item>
+		<item name="wcf.acp.invitation.delete.sure"><![CDATA[Do you really want to delete this invitation?]]></item>
+		<item name="wcf.acp.invitation.delete.success"><![CDATA[The invitation has been successfully deleted.]]></item>
+		<item name="wcf.acp.invitation.invitationID"><![CDATA[ID]]></item>
+		<item name="wcf.acp.invitation.time"><![CDATA[Date of invitation]]></item>
+		<item name="wcf.acp.invitation.sender"><![CDATA[Sender]]></item>
+		<item name="wcf.acp.invitation.recipient"><![CDATA[Recipient]]></item>
+		<item name="wcf.acp.invitation.email"><![CDATA[Recipient e-mail adress]]></item>
+		<item name="wcf.acp.invitation.code"><![CDATA[Invitation code]]></item>
+	</category>
+	<category name="wcf.user.register">
+		<item name="wcf.user.register.invitation"><![CDATA[Invitation]]></item>
+		<item name="wcf.user.register.invitation.mail"><![CDATA[Hello!
+
+You have been invited by {$username} to register on page {PAGE_TITLE}. If you agree with that, 
+all you have to do is entering the link below in your browser:
+{PAGE_URL}/index.php?page=Register&action=r&email={$emailUrlEncoded}&invitationCode={$invitationCode}
+
+Be aware that this invitation is valid with the given e-mail adress below only. If you want to use 
+another e-mail adress, you can change your setting after the successful registration.
+
+The invitel e-mail adress is: 		{$email}
+Your invitation code is: 			{$invitationCode}
+
+If you have any problem with registration, please send an e-mail to the administrator: {MAIL_ADMIN_ADDRESS} 
+If you are not interested in a registration at {PAGE_TITLE}, you can ignore this e-mail.
+
+Have a nice day,
+Your {PAGE_TITLE} team.]]></item>
+		<item name="wcf.user.register.invitation.mail.subject"><![CDATA[You have been invited to register at {PAGE_TITLE}]]></item>
+		<item name="wcf.user.register.invitation.code"><![CDATA[9-digit invitation code]]></item>
+		<item name="wcf.user.register.invitation.code.description"><![CDATA[The invitation code is located in the invitation e-mail which has been send to you by an existing member. The invitation code is only valid with the exact same e-mail adress which the invitation was send to.]]></item>
+		<item name="wcf.user.register.invitation.code.optional"><![CDATA[An invitation code is <em>not</em> necessary for a successful registration.]]></item>
+		<item name="wcf.user.register.invitation.code.necessary"><![CDATA[You <strong>must</strong> enter a valid invitation code to register successfully.]]></item>
+		<item name="wcf.user.register.invitation.error.code.notValid"><![CDATA[You have entered an invalid invitation code.]]></item>
+	</category>
+	<category name="wcf.user.invitation">
+		<item name="wcf.user.invitation.title"><![CDATA[Invitations]]></item>
+		<item name="wcf.user.invitation.cancel"><![CDATA[Delete invitation]]></item>
+		<item name="wcf.user.invitation.cancel.sure"><![CDATA[Do you really want to delete this invitation?]]></item>
+		<item name="wcf.user.invitation.cancel.success"><![CDATA[The invitation has been successfully deleted.]]></item>
+		<item name="wcf.user.invitation.offer.success.single"><![CDATA[Your friend has been successfully invited.]]></item>
+		<item name="wcf.user.invitation.offer.success.multiple"><![CDATA[Your friends have  been successfully invited.]]></item>
+		<item name="wcf.user.invitation.email"><![CDATA[E-mail Addresse(s)]]></item>
+		<item name="wcf.user.invitation.email.description"><![CDATA[Please enter the e-mail adress(es) of the friend(s) you want to invite (comma seperated).]]></item>
+		<item name="wcf.user.invitation.error.email.alreadyUsed"><![CDATA[An user with the given e-mail adress {$email} already exists.]]></item>
+		<item name="wcf.user.invitation.unansweredInvitationList"><![CDATA[Not accepted invitations]]></item>
+		<item name="wcf.user.invitation.invitedMembers"><![CDATA[Accepted invitations]]></item>
+	</category>
+	<category name="wcf.user.usercp">
+		<item name="wcf.user.usercp.menu.link.management.invitations"><![CDATA[Invitations]]></item>
+	</category>
+	<category name="wcf.usersOnline">
+		<item name="wcf.usersOnline.location.invitation"><![CDATA[<a href="index.php?page=InvitationListEdit{SID_ARG_2ND}">Personal invitations</a>]]></item>
+	</category>
+</language>

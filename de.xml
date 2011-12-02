@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.user.invitation"><![CDATA[Einladungen]]></item>
+		<item name="wcf.acp.menu.link.user.invitation.view"><![CDATA[Einladungen auflisten]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.invitation_active"><![CDATA[Einladen von Freunden aktivieren]]></item>
+		<item name="wcf.acp.option.invitation_active.description"><![CDATA[Erlaubt Ihren Benutzern ihre Freunde einzuladen.]]></item>
+		<item name="wcf.acp.option.invitation_necessary"><![CDATA[Registrierung nur auf Einladung]]></item>
+		<item name="wcf.acp.option.invitation_necessary.description"><![CDATA[Neue Benutzer können sich nur mit einer gültigen Einladung registrieren, wenn Sie diese Option aktivierst.]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.admin.invitation"><![CDATA[Einladungen]]></item>
+		<item name="wcf.acp.group.option.category.admin.invitation.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.admin.invitation.canDeleteInvitation"><![CDATA[Kann Einladungen löschen]]></item>
+		<item name="wcf.acp.group.option.admin.invitation.canDeleteInvitation.description"><![CDATA[Mitglieder dieser Benutzergruppe können Einladungen löschen.]]></item>
+		<item name="wcf.acp.group.option.category.user.invitation"><![CDATA[Einladungen]]></item>
+		<item name="wcf.acp.group.option.category.user.invitation.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.user.invitation.canInvite"><![CDATA[Kann Freunde einladen]]></item>
+		<item name="wcf.acp.group.option.user.invitation.canInvite.description"><![CDATA[Mitglieder dieser Benutzergruppe können ihre Freunde einladen.]]></item>
+	</category>
+	<category name="wcf.acp.invitation">
+		<item name="wcf.acp.invitation.view"><![CDATA[Einladungen]]></item>
+		<item name="wcf.acp.invitation.view.count"><![CDATA[Insgesamt {#$items} Einladung{if $items != 1}en{/if}]]></item>
+		<item name="wcf.acp.invitation.count.noEntries"><![CDATA[Derzeit sind keine Einladungen vorhanden.]]></item>
+		<item name="wcf.acp.invitation.delete"><![CDATA[Einladung löschen]]></item>
+		<item name="wcf.acp.invitation.delete.sure"><![CDATA[Wollen Sie diese Einladung wirklich löschen?]]></item>
+		<item name="wcf.acp.invitation.delete.success"><![CDATA[Die Einladung wurde erfolgreich gelöscht.]]></item>
+		<item name="wcf.acp.invitation.invitationID"><![CDATA[ID]]></item>
+		<item name="wcf.acp.invitation.time"><![CDATA[Zeitpunkt der Einladung]]></item>
+		<item name="wcf.acp.invitation.sender"><![CDATA[Absender]]></item>
+		<item name="wcf.acp.invitation.recipient"><![CDATA[Empfänger]]></item>
+		<item name="wcf.acp.invitation.email"><![CDATA[E-Mail des Empfängers]]></item>
+		<item name="wcf.acp.invitation.code"><![CDATA[Einladungscode]]></item>
+	</category>
+	<category name="wcf.user.register">
+		<item name="wcf.user.register.invitation"><![CDATA[Einladung]]></item>
+		<item name="wcf.user.register.invitation.mail"><![CDATA[Guten Tag!
+
+Sie wurden von {$username} eingeladen, sich auf der Website {PAGE_TITLE} zu registrieren. 
+Falls Sie damit einverstanden sind, rufen Sie einfach folgenden Link in Ihrem Browser auf 
+und geben Sie die nötigen Daten ein:
+{PAGE_URL}/index.php?page=Register&action=r&email={$emailUrlEncoded}&invitationCode={$invitationCode}
+
+Beachten Sie, dass diese Einladung nur für die unten angegebene E-Mail-Adresse gültig ist. Falls 
+Sie eine andere E-Mail-Adresse verwenden wollen, können Sie diese nach der abgeschlossenen 
+Registrierung ändern.
+
+Die eingeladene E-Mail-Adresse lautet: 		{$email}
+Ihr Einladungscode lautet: 					{$invitationCode}
+
+Wenn Sie Probleme mit der Registrierung haben, wenden Sie sich an den Administrator: {MAIL_ADMIN_ADDRESS} 
+Sollten Sie kein Interesse an einer Registrierung auf der Website: {PAGE_TITLE} haben, können sie diese 
+E-Mail ignorieren.
+
+Vielen Dank,
+Ihr {PAGE_TITLE} Team.]]></item>
+		<item name="wcf.user.register.invitation.mail.subject"><![CDATA[Sie wurden eingeladen, sich auf {PAGE_TITLE} zu registrieren]]></item>
+		<item name="wcf.user.register.invitation.code"><![CDATA[9-Stelliger Einladungscode]]></item>
+		<item name="wcf.user.register.invitation.code.description"><![CDATA[Den Einladungscode finden Sie in der Einladungs-E-Mail, die Ihnen durch ein bestehendes Mitglied zugeschickt wurde. Der Einladungscode ist nur zusammen mit der E-Mail-Adresse gültig, an die die Einladung verschickt wurde.]]></item>
+		<item name="wcf.user.register.invitation.code.optional"><![CDATA[Ein Einladungscode ist für eine erfolgreiche Registrierung <em>nicht</em> notwendig.]]></item>
+		<item name="wcf.user.register.invitation.code.necessary"><![CDATA[Für eine erfolgreiche Registrierung <strong>müssen</strong> Sie einen gültigen Einladungscode eingeben.]]></item>
+		<item name="wcf.user.register.invitation.error.code.notValid"><![CDATA[Sie haben einen ungültigen Einladungscode eingegeben.]]></item>
+	</category>
+	<category name="wcf.user.invitation">
+		<item name="wcf.user.invitation.title"><![CDATA[Einladungen]]></item>
+		<item name="wcf.user.invitation.cancel"><![CDATA[Einladung löschen]]></item>
+		<item name="wcf.user.invitation.cancel.sure"><![CDATA[Wollen Sie diese Einladung wirklich löschen?]]></item>
+		<item name="wcf.user.invitation.cancel.success"><![CDATA[Die Einladung wurde erfolgreich gelöscht.]]></item>
+		<item name="wcf.user.invitation.offer.success.single"><![CDATA[Ihr Freund wurde erfolgreich eingeladen.]]></item>
+		<item name="wcf.user.invitation.offer.success.multiple"><![CDATA[Ihre Freunde wurden erfolgreich eingeladen.]]></item>
+		<item name="wcf.user.invitation.email"><![CDATA[E-Mail-Adresse(n)]]></item>
+		<item name="wcf.user.invitation.email.description"><![CDATA[Bitte geben Sie die E-Mail-Adesse Ihres Freundes ein, den Sie einladen möchten. Mehrere E-Mail-Adressen werden mit je einem Komma voneinander getrennt.]]></item>
+		<item name="wcf.user.invitation.error.email.alreadyUsed"><![CDATA[Ein Benutzer mit der E-Mail-Adresse {$email} existiert bereits.]]></item>
+		<item name="wcf.user.invitation.unansweredInvitationList"><![CDATA[Noch nicht akzeptierte Einladungen]]></item>
+		<item name="wcf.user.invitation.invitedMembers"><![CDATA[Akzeptierte Einladungen]]></item>
+	</category>
+	<category name="wcf.user.usercp">
+		<item name="wcf.user.usercp.menu.link.management.invitations"><![CDATA[Einladungen]]></item>
+	</category>
+	<category name="wcf.usersOnline">
+		<item name="wcf.usersOnline.location.invitation"><![CDATA[<a href="index.php?page=InvitationListEdit{SID_ARG_2ND}">Persönliche Einladungen</a>]]></item>
+	</category>
+</language>

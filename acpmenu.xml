@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/acp-menu.xsd">
+	<import>
+		<acpmenuitem name="wcf.acp.menu.link.user.invitation">
+			<parent>wcf.acp.menu.link.user</parent>
+			<options>invitation</options>
+		</acpmenuitem>
+		<acpmenuitem name="wcf.acp.menu.link.user.invitation.view">
+			<parent>wcf.acp.menu.link.user.invitation</parent>
+			<showorder>1</showorder>
+			<link>index.php?page=InvitationList</link>
+			<icon>icon/groupAddM.png</icon>
+			<permissions>admin.invitation.canDeleteInvitation</permissions> 
+		</acpmenuitem>
+	</import>
+</data>
