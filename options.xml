@@ -2,17 +2,21 @@
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
 	<import>
 		<options>
-			<option name="invitation_active">
-				<categoryname>user.register</categoryname>
+			<option name="module_invitation">
+				<categoryname>module.user</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>0</defaultvalue>
-				<enableoptions>invitation_necessary</enableoptions>
 			</option>
-			<option name="invitation_necessary">
+			<option name="register_invitation_necessary">
 				<categoryname>user.register</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>0</defaultvalue>
+				<options>module_invitation</options>
 			</option>
 		</options>
 	</import>
+	<delete>
+		<option name="invitation_active" />
+		<option name="invitation_necessary" />
+	</delete>
 </data>

@@ -5,10 +5,10 @@
 		<item name="wcf.acp.menu.link.user.invitation.view"><![CDATA[List invitations]]></item>
 	</category>
 	<category name="wcf.acp.option">
-		<item name="wcf.acp.option.invitation_active"><![CDATA[Activate invitation of friends]]></item>>
-		<item name="wcf.acp.option.invitation_active.description"><![CDATA[Allows your users to invite their friends.]]></item>
-		<item name="wcf.acp.option.invitation_necessary"><![CDATA[Register by invitation only]]></item>
-		<item name="wcf.acp.option.invitation_necessary.description"><![CDATA[New users can only register if their were invited, when you activate this option.]]></item>
+		<item name="wcf.acp.option.module_invitation"><![CDATA[Invitation system]]></item>
+		<item name="wcf.acp.option.module_invitation.description"><![CDATA[Enables the ability to invite friends.]]></item>
+		<item name="wcf.acp.option.register_invitation_necessary"><![CDATA[Register by invitation only]]></item>
+		<item name="wcf.acp.option.register_invitation_necessary.description"><![CDATA[New users can only register if their were invited, when you activate this option.]]></item>
 	</category>
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.category.admin.invitation"><![CDATA[Invitations]]></item>

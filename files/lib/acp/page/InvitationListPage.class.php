@@ -98,6 +98,10 @@ class InvitationListPage extends SortablePage {
 	 * @see Page::show()
 	 */
 	public function show() {
+		if (!MODULE_INVITATION) {
+			throw new IllegalLinkException();
+		}
+		
 		// enable menu item
 		WCFACP::getMenu()->setActiveMenuItem('wcf.acp.menu.link.user.invitation.view');
 		

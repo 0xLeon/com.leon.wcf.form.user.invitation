@@ -4,9 +4,11 @@
 		<categories>
 			<categorie name="user.invitation">
 				<parent>user.profile</parent>
+				<options>module_invitation</options>
 			</categorie>
 			<categorie name="admin.invitation">
 				<parent>admin.user</parent>
+				<options>module_invitation</options>
 			</categorie>
 		</categories>
 		<options>

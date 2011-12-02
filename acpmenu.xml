@@ -3,7 +3,7 @@
 	<import>
 		<acpmenuitem name="wcf.acp.menu.link.user.invitation">
 			<parent>wcf.acp.menu.link.user</parent>
-			<options>invitation</options>
+			<options>module_invitation</options>
 		</acpmenuitem>
 		<acpmenuitem name="wcf.acp.menu.link.user.invitation.view">
 			<parent>wcf.acp.menu.link.user.invitation</parent>

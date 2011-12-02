@@ -33,7 +33,7 @@
 	<form method="post" action="index.php?form=InvitationListEdit">
 		<div class="border tabMenuContent">
 			<div class="container-1">
-				<h3 class="subHeadline"><img src="{@RELATIVE_WCF_DIR}icon/groupAddM.png" alt="" /> {lang}wcf.user.invitation.title{/lang}</h3>
+				<h3 class="subHeadline"><img src="{icon}groupAddM.png{/icon}" alt="" /> {lang}wcf.user.invitation.title{/lang}</h3>
 					
 				<div class="formElement{if $errorField == 'emails'} formError{/if}">
 					<div class="formFieldLabel">
@@ -87,9 +87,9 @@
 							{foreach from=$invitedMembers item=$member}
 								<li>
 									{if $member->isOnline()}
-										<img src="{*{icon}onlineS.png{/icon}*}{@RELATIVE_WCF_DIR}icon/onlineS.png" alt="" title="{lang username=$member}wcf.user.online{/lang}" class="memberListStatusIcon" />
+										<img src="{icon}onlineS.png{/icon}" alt="" title="{lang username=$member}wcf.user.online{/lang}" class="memberListStatusIcon" />
 									{else}
-										<img src="{*{icon}offlineS.png{/icon}*}{@RELATIVE_WCF_DIR}icon/offlineS.png" alt="" title="{lang username=$member}wcf.user.offline{/lang}" class="memberListStatusIcon" />
+										<img src="{icon}offlineS.png{/icon}" alt="" title="{lang username=$member}wcf.user.offline{/lang}" class="memberListStatusIcon" />
 									{/if}
 									<a href="index.php?page=User&amp;userID={@$member->userID}{@SID_ARG_2ND}" title="{lang username=$member}wcf.user.viewProfile{/lang}" class="memberName"><span>{$member}</span></a>
 									

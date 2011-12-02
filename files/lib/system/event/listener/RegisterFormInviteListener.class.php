@@ -20,7 +20,7 @@ class RegisterFormInviteListener implements EventListener {
 	 * @see EventListener::execute()
 	 */
 	public function execute($eventObj, $className, $eventName) {
-		if (INVITATION_ACTIVE) {
+		if (MODULE_INVITATION) {
 			if ($eventName === 'readParameters') {
 				if (isset($_GET['invitationCode']) && !empty($_GET['invitationCode'])) {
 					$eventObj->additionalFields['invitationCode'] = intval($_GET['invitationCode']);
@@ -46,7 +46,7 @@ class RegisterFormInviteListener implements EventListener {
 			}
 			else if ($eventName === 'validate') {
 				try {
-					if (INVITATION_NECESSARY && empty($eventObj->additionalFields['invitationCode'])) {
+					if (REGISTER_INVITATION_NECESSARY && empty($eventObj->additionalFields['invitationCode'])) {
 						throw new UserInputException('invitationCode');
 					}
 					

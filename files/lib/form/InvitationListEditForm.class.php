@@ -179,6 +179,10 @@ class InvitationListEditForm extends AbstractSecureForm {
 			throw new PermissionDeniedException();
 		}
 		
+		if (!MODULE_INVITATION) {
+			throw new IllegalLinkException();
+		}
+		
 		WCF::getUser()->checkPermission($this->neededPermissions);
 		
 		UserCPMenu::getInstance()->setActiveMenuItem('wcf.user.usercp.menu.link.management.invitations');

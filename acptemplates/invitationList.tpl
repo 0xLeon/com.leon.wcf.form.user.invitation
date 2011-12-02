@@ -17,7 +17,7 @@
 </div>
 
 {if $invitations|count}
-	<div class="border">
+	<div class="border titleBarPanel">
 		<div class="containerHead"><h3>{lang}wcf.acp.invitation.view.count{/lang}</h3></div>
 	</div>
 	<div class="border borderMarginRemove">

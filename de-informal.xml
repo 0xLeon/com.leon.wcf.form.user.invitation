@@ -5,8 +5,8 @@
 		<item name="wcf.acp.menu.link.user.invitation.view"><![CDATA[Einladungen auflisten]]></item>
 	</category>
 	<category name="wcf.acp.option">
-		<item name="wcf.acp.option.invitation_active"><![CDATA[Einladen von Freunden aktivieren]]></item>
-		<item name="wcf.acp.option.invitation_active.description"><![CDATA[Erlaubt deinen Benutzern ihre Freunde einzuladen.]]></item>
+		<item name="wcf.acp.option.module_invitation"><![CDATA[Einladungs-System]]></item>
+		<item name="wcf.acp.option.module_invitation.description"><![CDATA[Aktiviert die Möglichkeit Freunde ein zu laden.]]></item>
 		<item name="wcf.acp.option.invitation_necessary"><![CDATA[Registrierung nur auf Einladung]]></item>
 		<item name="wcf.acp.option.invitation_necessary.description"><![CDATA[Neue Benutzer können sich nur mit einer gültigen Einladung registrieren, wenn du diese Option aktivierst.]]></item>
 	</category>

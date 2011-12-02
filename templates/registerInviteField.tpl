@@ -17,7 +17,7 @@
 					<div class="formFieldDesc">
 						<p>
 							{lang}wcf.user.register.invitation.code.description{/lang}
-							{if INVITATION_NECESSARY}
+							{if REGISTER_INVITATION_NECESSARY}
 								{lang}wcf.user.register.invitation.code.necessary{/lang}
 							{else}
 								{lang}wcf.user.register.invitation.code.optional{/lang}

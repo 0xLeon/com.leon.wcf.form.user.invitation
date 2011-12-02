@@ -6,7 +6,7 @@
 		<packagedescription languagecode="de"><![CDATA[Gibt Ihren Benutzern die Möglichkeit, Freunde einzuladen.]]></packagedescription>
 		<packagedescription languagecode="en"><![CDATA[Give your user the ability to invite their friends.]]></packagedescription>
 		<packageurl><![CDATA[https://github.com/Leon-/com.leon.wcf.form.user.invitation]]></packageurl>
-		<version>1.0.0</version>
+		<version>1.1.0</version>
 		<date>2011-12-02</date>
 		<isunique>1</isunique>
         <standalone>0</standalone>
@@ -17,10 +17,11 @@
 		<authorurl><![CDATA[https://github.com/Leon-]]></authorurl>
 	</authorinformation>
 	<requiredpackage>
-		<requiredpackage minversion="1.0.10">com.woltlab.wcf.form.user</requiredpackage>
+		<requiredpackage minversion="1.1.*">com.woltlab.wcf.form.user</requiredpackage>
 	</requiredpackage>
 	<excludedpackages>
-		<excludedpackage version="1.1.*">com.woltlab.wcf.form.user</excludedpackage>
+		<excludedpackage version="1.2.*">com.woltlab.wcf.form.user</excludedpackage>
+		<excludedpackage version="2.*.*">com.woltlab.wcf.form.user</excludedpackage>
 	</excludedpackages>
 	<instructions type="install">
 		<files>files.tar</files>
@@ -29,6 +30,19 @@
 		<sql>install.sql</sql>
 		<pagelocation>pagelocation.xml</pagelocation>
 		<eventlistener>eventlistener.xml</eventlistener>
+		<groupoptions>groupoptions.xml</groupoptions>
+		<usercpmenu>usercpmenu.xml</usercpmenu>
+		<options>options.xml</options>
+		<acpmenu>acpmenu.xml</acpmenu>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0.*">
+		<files>files.tar</files>
+		<acptemplates>acptemplates.tar</acptemplates>
+		<templates>templates.tar</templates>
 		<groupoptions>groupoptions.xml</groupoptions>
 		<usercpmenu>usercpmenu.xml</usercpmenu>
 		<options>options.xml</options>

@@ -5,7 +5,7 @@
 			<link>index.php?form=InvitationListEdit</link>
 			<parent>wcf.user.usercp.menu.link.management</parent>
 			<permissions>user.invitation.canInvite</permissions>
-			<!--<icon>icon/groupAddS.png</icon>-->
+			<options>module_invitation</options>
 		</usercpmenuitem>
 	</import>
 </data>

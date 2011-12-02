@@ -36,7 +36,7 @@ class InvitationDeleteAction extends AbstractAction {
 		
 		if (isset($_REQUEST['invitationID'])) $this->invitationID = intval($_REQUEST['invitationID']);
 		$this->invitation = new InvitationEditor($this->invitationID);
-		if (!$this->invitation->invitationID || $this->invitation->isSealed) {
+		if (!MODULE_INVITATION || !$this->invitation->invitationID || $this->invitation->isSealed) {
 			throw new IllegalLinkException();
 		}
 	}
