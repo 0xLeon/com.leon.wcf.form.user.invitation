@@ -7,14 +7,14 @@
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.module_invitation"><![CDATA[Einladungs-System]]></item>
 		<item name="wcf.acp.option.module_invitation.description"><![CDATA[Aktiviert die Möglichkeit Freunde ein zu laden.]]></item>
-		<item name="wcf.acp.option.invitation_necessary"><![CDATA[Registrierung nur auf Einladung]]></item>
-		<item name="wcf.acp.option.invitation_necessary.description"><![CDATA[Neue Benutzer können sich nur mit einer gültigen Einladung registrieren, wenn du diese Option aktivierst.]]></item>
+		<item name="wcf.acp.option.register_invitation_necessary"><![CDATA[Registrierung nur auf Einladung]]></item>
+		<item name="wcf.acp.option.register_invitation_necessary.description"><![CDATA[Neue Benutzer können sich nur mit einer gültigen Einladung registrieren, wenn du diese Option aktivierst.]]></item>
 	</category>
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.category.admin.invitation"><![CDATA[Einladungen]]></item>
 		<item name="wcf.acp.group.option.category.admin.invitation.description"><![CDATA[]]></item>
-		<item name="wcf.acp.group.option.admin.invitation.canListInvitations"><![CDATA[Kann Einladungen betrachten]]></item>
-		<item name="wcf.acp.group.option.admin.invitation.canListInvitations.description"><![CDATA[Mitglieder dieser Benutzergruppe können die Liste der Einladungen aufrufen.]]></item>
+		<item name="wcf.acp.group.option.admin.invitation.canViewInvitationsList"><![CDATA[Kann Einladungen betrachten]]></item>
+		<item name="wcf.acp.group.option.admin.invitation.canViewInvitationsList.description"><![CDATA[Mitglieder dieser Benutzergruppe können die Liste der Einladungen aufrufen.]]></item>
 		<item name="wcf.acp.group.option.admin.invitation.canDeleteInvitation"><![CDATA[Kann Einladungen löschen]]></item>
 		<item name="wcf.acp.group.option.admin.invitation.canDeleteInvitation.description"><![CDATA[Mitglieder dieser Benutzergruppe können Einladungen löschen.]]></item>
 		<item name="wcf.acp.group.option.category.user.invitation"><![CDATA[Einladungen]]></item>
