@@ -8,7 +8,7 @@
 		<item name="wcf.acp.option.module_invitation"><![CDATA[Invitation system]]></item>
 		<item name="wcf.acp.option.module_invitation.description"><![CDATA[Enables the ability to invite friends.]]></item>
 		<item name="wcf.acp.option.register_invitation_necessary"><![CDATA[Register by invitation only]]></item>
-		<item name="wcf.acp.option.register_invitation_necessary.description"><![CDATA[New users can only register if their were invited, when you activate this option.]]></item>
+		<item name="wcf.acp.option.register_invitation_necessary.description"><![CDATA[New users can only register if they are invited, when you activate this option.]]></item>
 	</category>
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.category.admin.invitation"><![CDATA[Invitations]]></item>
@@ -25,7 +25,7 @@
 	<category name="wcf.acp.invitation">
 		<item name="wcf.acp.invitation.view"><![CDATA[Invitations]]></item>
 		<item name="wcf.acp.invitation.view.count"><![CDATA[There is a total of {#$items} invitation{if $items != 1}s{/if}]]></item>
-		<item name="wcf.acp.invitation.count.noEntries"><![CDATA[There are currently no invitationss available.]]></item>
+		<item name="wcf.acp.invitation.count.noEntries"><![CDATA[There are currently no invitations available.]]></item>
 		<item name="wcf.acp.invitation.delete"><![CDATA[Delete invitation]]></item>
 		<item name="wcf.acp.invitation.delete.sure"><![CDATA[Do you really want to delete this invitation?]]></item>
 		<item name="wcf.acp.invitation.delete.success"><![CDATA[The invitation has been successfully deleted.]]></item>
@@ -72,7 +72,7 @@ Your {PAGE_TITLE} team.]]></item>
 		<item name="wcf.user.invitation.email"><![CDATA[E-mail Addresse(s)]]></item>
 		<item name="wcf.user.invitation.email.description"><![CDATA[Please enter the e-mail adress(es) of the friend(s) you want to invite (comma seperated).]]></item>
 		<item name="wcf.user.invitation.error.email.alreadyUsed"><![CDATA[An user with the given e-mail adress {$email} already exists.]]></item>
-		<item name="wcf.user.invitation.unansweredInvitationList"><![CDATA[Not accepted invitations]]></item>
+		<item name="wcf.user.invitation.unansweredInvitationList"><![CDATA[Not yet accepted invitations]]></item>
 		<item name="wcf.user.invitation.invitedMembers"><![CDATA[Accepted invitations]]></item>
 	</category>
 	<category name="wcf.user.usercp">
