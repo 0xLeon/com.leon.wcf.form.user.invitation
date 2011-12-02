@@ -13,6 +13,8 @@
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.category.admin.invitation"><![CDATA[Einladungen]]></item>
 		<item name="wcf.acp.group.option.category.admin.invitation.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.admin.invitation.canListInvitations"><![CDATA[Kann Einladungen betrachten]]></item>
+		<item name="wcf.acp.group.option.admin.invitation.canListInvitations.description"><![CDATA[Mitglieder dieser Benutzergruppe können die Liste der Einladungen aufrufen.]]></item>
 		<item name="wcf.acp.group.option.admin.invitation.canDeleteInvitation"><![CDATA[Kann Einladungen löschen]]></item>
 		<item name="wcf.acp.group.option.admin.invitation.canDeleteInvitation.description"><![CDATA[Mitglieder dieser Benutzergruppe können Einladungen löschen.]]></item>
 		<item name="wcf.acp.group.option.category.user.invitation"><![CDATA[Einladungen]]></item>

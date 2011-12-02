@@ -13,6 +13,8 @@
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.category.admin.invitation"><![CDATA[Invitations]]></item>
 		<item name="wcf.acp.group.option.category.admin.invitation.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.admin.invitation.canListInvitations"><![CDATA[Can view invitations]]></item>
+		<item name="wcf.acp.group.option.admin.invitation.canListInvitations.description"><![CDATA[Members of this group can view the list of invitations.]]></item>
 		<item name="wcf.acp.group.option.admin.invitation.canDeleteInvitation"><![CDATA[Can delete invitations]]></item>
 		<item name="wcf.acp.group.option.admin.invitation.canDeleteInvitation.description"><![CDATA[Members of this group can delete invitations.]]></item>
 		<item name="wcf.acp.group.option.category.user.invitation"><![CDATA[Invitations]]></item>

@@ -10,7 +10,7 @@
 			<showorder>1</showorder>
 			<link>index.php?page=InvitationList</link>
 			<icon>icon/groupAddM.png</icon>
-			<permissions>admin.invitation.canDeleteInvitation</permissions> 
+			<permissions>admin.invitation.canViewInvitationsList,admin.invitation.canDeleteInvitation</permissions> 
 		</acpmenuitem>
 	</import>
 </data>

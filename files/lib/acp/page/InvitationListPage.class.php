@@ -106,7 +106,7 @@ class InvitationListPage extends SortablePage {
 		WCFACP::getMenu()->setActiveMenuItem('wcf.acp.menu.link.user.invitation.view');
 		
 		// check permission
-		WCF::getUser()->checkPermission('admin.invitation.canDeleteInvitation');
+		WCF::getUser()->checkPermission(array('admin.invitation.canViewInvitationsList', 'admin.invitation.canDeleteInvitation'));
 		
 		parent::show();
 	}
