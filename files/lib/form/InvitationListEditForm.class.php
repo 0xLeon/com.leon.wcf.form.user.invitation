@@ -144,13 +144,13 @@ class InvitationListEditForm extends AbstractSecureForm {
 		$this->unansweredInvitationList = new InvitationList();
 		$this->unansweredInvitationList->sqlLimit = 0;
 		$this->unansweredInvitationList->sqlConditions .= 'sender.userID = '.WCF::getUser()->userID.' AND invitation.isSealed = 0';
-		$this->unansweredInvitationList->sqlOrderBy .= 'recipient.username ASC';
+		$this->unansweredInvitationList->sqlOrderBy .= 'invitation.email ASC';
 		$this->unansweredInvitationList->readObjects();
 		
 		$acceptedInvitationList = new InvitationList();
 		$acceptedInvitationList->sqlLimit = 0;
 		$acceptedInvitationList->sqlConditions .= 'sender.userID = '.WCF::getUser()->userID.' AND invitation.isSealed = 1';
-		$acceptedInvitationList->sqlOrderBy .= 'invitation.email ASC';
+		$acceptedInvitationList->sqlOrderBy .= 'recipient.username ASC';
 		$acceptedInvitationList->readObjects();
 		
 		foreach ($acceptedInvitationList->getObjects() as $acceptedInvitation) {
