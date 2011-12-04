@@ -16,10 +16,10 @@
 		<author><![CDATA[Stefan Hahn]]></author>
 		<authorurl><![CDATA[https://github.com/Leon-]]></authorurl>
 	</authorinformation>
-	<requiredpackage>
+	<requiredpackages>
 		<requiredpackage minversion="1.1.*">com.woltlab.wcf.form.user</requiredpackage>
-		<requiredpackage file="requirements/com.leon.wcf.package.update.files.delete.tar">com.leon.wcf.package.update.files.delete</requiredpackage>
-	</requiredpackage>
+		<requiredpackage minversion="1.0.0" file="requirements/com.leon.wcf.package.update.delete.files.tar">com.leon.wcf.package.update.delete.files</requiredpackage>
+	</requiredpackages>
 	<excludedpackages>
 		<excludedpackage version="1.2.*">com.woltlab.wcf.form.user</excludedpackage>
 		<excludedpackage version="2.*.*">com.woltlab.wcf.form.user</excludedpackage>
