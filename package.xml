@@ -30,7 +30,6 @@
 		<templates>templates.tar</templates>
 		<sql>install.sql</sql>
 		<pagelocation>pagelocation.xml</pagelocation>
-		<filesdelete>filesdelete.xml</filesdelete>
 		<eventlistener>eventlistener.xml</eventlistener>
 		<cronjobs>cronjobs.xml</cronjobs>
 		<groupoptions>groupoptions.xml</groupoptions>
