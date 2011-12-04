@@ -13,7 +13,7 @@ require_once(WCF_DIR.'lib/data/user/invitation/InvitationEditor.class.php');
  * @subpackage	system.event.listener
  * @category 	Community Framework
  */
-class UserDeleteActionInvitationDelete implements EventListener {
+class UserDeleteActionInvitationDeleteListener implements EventListener {
 	protected static $invitations = array();
 	
 	/**
