@@ -12,5 +12,6 @@
 			<execmultiple>0</execmultiple>
 			<canbeedited>0</canbeedited>
 			<canbedisabled>0</canbedisabled>
+		</cronjob>
 	</import>
 </data>
