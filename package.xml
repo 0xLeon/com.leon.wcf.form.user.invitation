@@ -18,6 +18,7 @@
 	</authorinformation>
 	<requiredpackage>
 		<requiredpackage minversion="1.1.*">com.woltlab.wcf.form.user</requiredpackage>
+		<requiredpackage file="requirements/com.leon.wcf.package.update.files.delete.tar">com.leon.wcf.package.update.files.delete</requiredpackage>
 	</requiredpackage>
 	<excludedpackages>
 		<excludedpackage version="1.2.*">com.woltlab.wcf.form.user</excludedpackage>
@@ -29,6 +30,7 @@
 		<templates>templates.tar</templates>
 		<sql>install.sql</sql>
 		<pagelocation>pagelocation.xml</pagelocation>
+		<filesdelete>filesdelete.xml</filesdelete>
 		<eventlistener>eventlistener.xml</eventlistener>
 		<cronjobs>cronjobs.xml</cronjobs>
 		<groupoptions>groupoptions.xml</groupoptions>
@@ -44,6 +46,7 @@
 		<files>files.tar</files>
 		<acptemplates>acptemplates.tar</acptemplates>
 		<templates>templates.tar</templates>
+		<filesdelete>filesdelete.xml</filesdelete>
 		<cronjobs>cronjobs.xml</cronjobs>
 		<groupoptions>groupoptions.xml</groupoptions>
 		<usercpmenu>usercpmenu.xml</usercpmenu>
