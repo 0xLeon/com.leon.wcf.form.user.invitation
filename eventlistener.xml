@@ -34,13 +34,13 @@
 		<eventlistener>
 			<eventClassName>UserDeleteAction</eventClassName>
 			<eventName>execute</eventName>
-			<listenerClassFile>lib/system/event/listener/UserDeleteActionInvitationDelete.class.php</listenerClassFile>
+			<listenerClassFile>lib/system/event/listener/UserDeleteActionInvitationDeleteListener.class.php</listenerClassFile>
 			<environment>admin</environment>
 		</eventlistener>
 		<eventlistener>
 			<eventClassName>UserDeleteAction</eventClassName>
 			<eventName>executed</eventName>
-			<listenerClassFile>lib/system/event/listener/UserDeleteActionInvitationDelete.class.php</listenerClassFile>
+			<listenerClassFile>lib/system/event/listener/UserDeleteActionInvitationDeleteListener.class.php</listenerClassFile>
 			<environment>admin</environment>
 		</eventlistener>
 	</import>
