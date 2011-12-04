@@ -47,6 +47,7 @@
 		<acptemplates>acptemplates.tar</acptemplates>
 		<templates>templates.tar</templates>
 		<filesdelete>filesdelete.xml</filesdelete>
+		<eventlistener>eventlistener.xml</eventlistener>
 		<cronjobs>cronjobs.xml</cronjobs>
 		<groupoptions>groupoptions.xml</groupoptions>
 		<usercpmenu>usercpmenu.xml</usercpmenu>
