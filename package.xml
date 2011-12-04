@@ -30,6 +30,7 @@
 		<sql>install.sql</sql>
 		<pagelocation>pagelocation.xml</pagelocation>
 		<eventlistener>eventlistener.xml</eventlistener>
+		<cronjobs>cronjobs.xml</cronjobs>
 		<groupoptions>groupoptions.xml</groupoptions>
 		<usercpmenu>usercpmenu.xml</usercpmenu>
 		<options>options.xml</options>
@@ -43,6 +44,7 @@
 		<files>files.tar</files>
 		<acptemplates>acptemplates.tar</acptemplates>
 		<templates>templates.tar</templates>
+		<cronjobs>cronjobs.xml</cronjobs>
 		<groupoptions>groupoptions.xml</groupoptions>
 		<usercpmenu>usercpmenu.xml</usercpmenu>
 		<options>options.xml</options>
