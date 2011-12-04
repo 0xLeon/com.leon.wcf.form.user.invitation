@@ -1,1 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><data xmlns="https://www.github.com/Leon-" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.github.com/Leon- https://raw.github.com/Leon-/com.leon.wcf.package.update.delete.files/master/XSD/filesdelete.xsd">	<delete>		<file name="lib/system/event/listener/UserDeleteActionInvitationDelete.class.php" />	</delete></data>
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="https://www.github.com/Leon-" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.github.com/Leon- https://raw.github.com/Leon-/com.leon.wcf.package.update.delete.files/master/XSD/filesdelete.xsd">
+	<delete>
+		<file name="lib/system/event/listener/UserDeleteActionInvitationDelete.class.php" />
+	</delete>
+</data>
