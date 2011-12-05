@@ -8,7 +8,7 @@
 		<item name="wcf.acp.option.module_invitation"><![CDATA[Einladungs-System]]></item>
 		<item name="wcf.acp.option.module_invitation.description"><![CDATA[Aktiviert die Möglichkeit Freunde ein zu laden.]]></item>
 		<item name="wcf.acp.option.register_invitation_necessary"><![CDATA[Registrierung nur auf Einladung]]></item>
-		<item name="wcf.acp.option.register_invitation_necessary.description"><![CDATA[Neue Benutzer können sich nur mit einer gültigen Einladung registrieren, wenn Sie diese Option aktivierst.]]></item>
+		<item name="wcf.acp.option.register_invitation_necessary.description"><![CDATA[Neue Benutzer können sich nur mit einer gültigen Einladung registrieren, wenn Sie diese Option aktivieren.]]></item>
 	</category>
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.category.admin.invitation"><![CDATA[Einladungen]]></item>
@@ -33,7 +33,7 @@
 		<item name="wcf.acp.invitation.time"><![CDATA[Zeitpunkt der Einladung]]></item>
 		<item name="wcf.acp.invitation.sender"><![CDATA[Absender]]></item>
 		<item name="wcf.acp.invitation.recipient"><![CDATA[Empfänger]]></item>
-		<item name="wcf.acp.invitation.email"><![CDATA[E-Mail des Empfängers]]></item>
+		<item name="wcf.acp.invitation.email"><![CDATA[E-Mail-Adresse des Empfängers]]></item>
 		<item name="wcf.acp.invitation.code"><![CDATA[Einladungscode]]></item>
 	</category>
 	<category name="wcf.user.register">
