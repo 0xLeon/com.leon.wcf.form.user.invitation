@@ -39,7 +39,7 @@
 	<form method="post" action="index.php?form=InvitationListEdit">
 		<div class="border tabMenuContent">
 			<div class="container-1">
-				<h3 class="subHeadline"><img src="{icon}groupAddM.png{/icon}" alt="" /> {lang}wcf.user.invitation.title{/lang}</h3>
+				<h3 class="subHeadline">{lang}wcf.user.invitation.title{/lang}</h3>
 				
 				{if ($maxInvitations > 0 && $invitationsLeft > 0) || ($maxInvitations === 0)}
 					<div class="formElement{if $errorField == 'emails'} formError{/if}">
