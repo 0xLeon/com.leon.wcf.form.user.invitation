@@ -61,7 +61,8 @@ class Invitation extends DatabaseObject {
 		$sql = "SELECT	COUNT(*) AS invitations
 			FROM 	wcf".WCF_N."_user_invitation
 			WHERE	email = '".escapeString(StringUtil::toLowerCase($email))."'
-				AND code = ".intval($code);
+				AND code = ".intval($code)."
+				AND isSealed = 0";
 		$row = WCF::getDB()->getFirstRow($sql);
 		
 		return ($row['invitations'] == 1);
