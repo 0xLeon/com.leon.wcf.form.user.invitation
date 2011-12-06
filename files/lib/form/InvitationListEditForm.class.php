@@ -201,6 +201,10 @@ class InvitationListEditForm extends AbstractSecureForm {
 		parent::show();
 	}
 	
+	/**
+	 * Checks all given emails and throws a single UserInputException if 
+	 * any of them is invalid or already taken by an registered member.
+	 */
 	protected function validateEmails() {
 		$emailArray = explode(',', $this->emails);
 		$error = array();
@@ -224,6 +228,12 @@ class InvitationListEditForm extends AbstractSecureForm {
 		}
 	}
 	
+	/**
+	 * Throws an UserInputException if the email is not valid or 
+	 * already taken by an registered member.
+	 * 
+	 * @param	string		$email
+	 */
 	protected function validateEmail($email) {
 		if (!UserRegistrationUtil::isValidEmail($email)) {
 			throw new UserInputException('email', 'notValid');

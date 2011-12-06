@@ -47,15 +47,12 @@ class InvitationDeleteAction extends AbstractAction {
 	public function execute() {
 		parent::execute();
 		
-		// check permission
 		WCF::getUser()->checkPermission('admin.invitation.canDeleteInvitation');
-				
-		// delete invitation
+		
 		$this->invitation->delete();
 		
 		$this->executed();
 		
-		// forward to list page
 		HeaderUtil::redirect('index.php?page=InvitationList&deletedInvitationID='.$this->invitationID.'&packageID='.PACKAGE_ID.SID_ARG_2ND_NOT_ENCODED);
 		exit;
 	}

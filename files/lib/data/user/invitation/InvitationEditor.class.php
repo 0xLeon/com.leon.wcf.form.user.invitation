@@ -16,7 +16,7 @@ class InvitationEditor extends Invitation {
 	/**
 	 * Creates a new invitation
 	 * 
-	 * @return 	integer		invitation id
+	 * @return 	Invitation
 	 */
 	public static function create($email) {
 		$sql = "INSERT 
@@ -41,6 +41,8 @@ class InvitationEditor extends Invitation {
 	
 	/**
 	 * Deletes this invitation.
+	 * 
+	 * @return	boolean
 	 */
 	public function delete() {
 		$sql = "DELETE

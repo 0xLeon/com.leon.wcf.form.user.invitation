@@ -42,7 +42,6 @@ class InvitationListPage extends SortablePage {
 	public function readData() {
 		parent::readData();
 		
-		// get smileys
 		$this->invitationList->sqlOffset = ($this->pageNo - 1) * $this->itemsPerPage;
 		$this->invitationList->sqlLimit = $this->itemsPerPage;
 		$this->invitationList->sqlOrderBy = $this->sortField." ".$this->sortOrder;
@@ -102,10 +101,8 @@ class InvitationListPage extends SortablePage {
 			throw new IllegalLinkException();
 		}
 		
-		// enable menu item
 		WCFACP::getMenu()->setActiveMenuItem('wcf.acp.menu.link.user.invitation.view');
 		
-		// check permission
 		WCF::getUser()->checkPermission(array('admin.invitation.canViewInvitationsList', 'admin.invitation.canDeleteInvitation'));
 		
 		parent::show();
