@@ -18,21 +18,13 @@ class InvitationsCleanupCronjob implements Cronjob {
 	 * @see Cronjob::execute()
 	 */
 	public function execute($data) {
-		$abandonedInvitations = new InvitationList();
-		$abandonedInvitations->sqlLimit = 0;
-		$abandonedInvitations->sqlConditions .= 'invitation.isSealed = 1';
-		$abandonedInvitations->sqlOrderBy .= 'invitation.invitationID ASC';
-		$abandonedInvitations->readObjects();
-		
-		$invitationIDs = array();
-		foreach ($abandonedInvitations->getObjects() as $abandonedInvitation) {
-			if ($abandonedInvitation->recipientUserID === null) {
-				$invitationIDs[] = $abandonedInvitation->invitationID;
-			}
-		}
-		
-		$sql = "DELETE FROM	wcf".WCF_N."_user_invitation
-			WHERE		invitationID IN (".implode(',', $invitationIDs).")";
+		$sql = "DELETE FROM	wcf".WCF_N."_user_invitation invitation
+				WHERE	invitation.code NOT IN (
+						SELECT	invitationCode
+						FROM	wcf".WCF_N."_user
+						WHERE	invitationCode > 0
+					)
+					AND invitation.isSealed = 1";
 		WCF::getDB()->registerShutdownUpdate($sql);
 	}
 }
