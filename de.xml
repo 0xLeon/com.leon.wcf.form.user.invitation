@@ -78,6 +78,7 @@ Ihr {PAGE_TITLE} Team.]]></item>
 		<item name="wcf.user.invitation.email.description"><![CDATA[Bitte geben Sie die E-Mail-Adesse Ihres Freundes ein, den Sie einladen möchten. Mehrere E-Mail-Adressen werden mit je einem Komma voneinander getrennt.{if $max > 0} Sie können noch maximal {if $left == 1}einen{else}{#$left}{/if} Freund{if $left != 1}e{/if} einladen.{/if}]]></item>
 		<item name="wcf.user.invitation.error.email.alreadyUsed"><![CDATA[Ein Benutzer mit der E-Mail-Adresse {$email} existiert bereits.]]></item>
 		<item name="wcf.user.invitation.error.email.invitationLimitExceeded"><![CDATA[Die maximale Anzahl an eingeladenen Freunden wurde überschritten.]]></item>
+		<item name="wcf.user.invitation.error.sealed"><![CDATA[Diese Einladung kann nicht gelöscht werden, da sie schon akzeptiert wurde.]]></item>
 		<item name="wcf.user.invitation.unansweredInvitationList"><![CDATA[Noch nicht akzeptierte Einladungen]]></item>
 		<item name="wcf.user.invitation.invitedMembers"><![CDATA[Akzeptierte Einladungen]]></item>
 	</category>
