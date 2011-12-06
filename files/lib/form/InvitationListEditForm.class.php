@@ -94,6 +94,17 @@ class InvitationListEditForm extends AbstractSecureForm {
 			
 			$this->validateEmails();
 		}
+		
+		if ((count($this->invitedMails) > 0) && (intval(WCF::getUser()->getPermission('user.invitation.maxInvitations')) > 0)) {
+			$sql = "SELECT	COUNT(*) AS count
+				FROM	wcf".WCF_N."_user_invitation
+				WHERE	senderID = ".WCF::getUser()->userID;
+			$row = WCF::getDB()->getFirstRow($sql);
+			
+			if ((intval($row['count']) + count($this->invitedMails)) > intval(WCF::getUser()->getPermission('user.invitation.maxInvitations'))) {
+				throw new UserInputException('emails', array(array('type' => 'invitationLimitExceeded')));
+			}
+		}
 	}
 	
 	/**

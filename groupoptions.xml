@@ -2,20 +2,28 @@
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/group-options.xsd">
 	<import>
 		<categories>
-			<categorie name="user.invitation">
+			<category name="user.invitation">
 				<parent>user.profile</parent>
 				<options>module_invitation</options>
-			</categorie>
-			<categorie name="admin.invitation">
+			</category>
+			<category name="admin.invitation">
 				<parent>admin.user</parent>
 				<options>module_invitation</options>
-			</categorie>
+			</category>
 		</categories>
 		<options>
 			<option name="user.invitation.canInvite">
 				<categoryname>user.invitation</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>0</defaultvalue>
+				<enableoptions>user.invitation.maxInvitations</enableoptions>
+				<showorder>1</showorder>
+			</option>
+			<option name="user.invitation.maxInvitations">
+				<categoryname>user.invitation</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>3</showorder>
 			</option>
 			<option name="admin.invitation.canViewInvitationsList">
 				<categoryname>admin.invitation</categoryname>

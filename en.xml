@@ -21,6 +21,8 @@
 		<item name="wcf.acp.group.option.category.user.invitation.description"><![CDATA[]]></item>
 		<item name="wcf.acp.group.option.user.invitation.canInvite"><![CDATA[Can invite friends]]></item>
 		<item name="wcf.acp.group.option.user.invitation.canInvite.description"><![CDATA[Members of this group can invite their friends.]]></item>
+		<item name="wcf.acp.group.option.user.invitation.maxInvitations"><![CDATA[Maximum number of invitations]]></item>
+		<item name="wcf.acp.group.option.user.invitation.maxInvitations.description"><![CDATA[Enter the number friends, members of this group can invite. (0 = no limit)]]></item>
 	</category>
 	<category name="wcf.acp.invitation">
 		<item name="wcf.acp.invitation.view"><![CDATA[Invitations]]></item>
@@ -70,8 +72,9 @@ Your {PAGE_TITLE} team.]]></item>
 		<item name="wcf.user.invitation.offer.success.single"><![CDATA[Your friend has been successfully invited.]]></item>
 		<item name="wcf.user.invitation.offer.success.multiple"><![CDATA[Your friends have  been successfully invited.]]></item>
 		<item name="wcf.user.invitation.email"><![CDATA[E-mail Addresse(s)]]></item>
-		<item name="wcf.user.invitation.email.description"><![CDATA[Please enter the e-mail adress(es) of the friend(s) you want to invite (comma seperated).]]></item>
+		<item name="wcf.user.invitation.email.description"><![CDATA[Please enter the e-mail adress(es) of the friend(s) you want to invite (comma seperated).{if $max > 0} You're allowed to invite {if $left == 1}one{else}{#$invitationsLeft}{/if} friend{if $left != 1}s{/if} yet.{/if}]]></item>
 		<item name="wcf.user.invitation.error.email.alreadyUsed"><![CDATA[An user with the given e-mail adress {$email} already exists.]]></item>
+		<item name="wcf.user.invitation.error.email.invitationLimitExceeded"><![CDATA[The maximum number of invited friends was exceeded.]]></item>
 		<item name="wcf.user.invitation.unansweredInvitationList"><![CDATA[Not yet accepted invitations]]></item>
 		<item name="wcf.user.invitation.invitedMembers"><![CDATA[Accepted invitations]]></item>
 	</category>

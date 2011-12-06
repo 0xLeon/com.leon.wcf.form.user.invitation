@@ -21,6 +21,8 @@
 		<item name="wcf.acp.group.option.category.user.invitation.description"><![CDATA[]]></item>
 		<item name="wcf.acp.group.option.user.invitation.canInvite"><![CDATA[Kann Freunde einladen]]></item>
 		<item name="wcf.acp.group.option.user.invitation.canInvite.description"><![CDATA[Mitglieder dieser Benutzergruppe können ihre Freunde einladen.]]></item>
+		<item name="wcf.acp.group.option.user.invitation.maxInvitations"><![CDATA[Maximale Anzahl Einladungen]]></item>
+		<item name="wcf.acp.group.option.user.invitation.maxInvitations.description"><![CDATA[Wie viele Freunde können Mitglieder dieser Benutzergruppe maximal einladen? (0 = keine Beschränkung)]]></item>
 	</category>
 	<category name="wcf.acp.invitation">
 		<item name="wcf.acp.invitation.view"><![CDATA[Einladungen]]></item>
@@ -73,8 +75,9 @@ dein {PAGE_TITLE} Team.]]></item>
 		<item name="wcf.user.invitation.offer.success.single"><![CDATA[Dein Freund wurde erfolgreich eingeladen.]]></item>
 		<item name="wcf.user.invitation.offer.success.multiple"><![CDATA[Deine Freunde wurden erfolgreich eingeladen.]]></item>
 		<item name="wcf.user.invitation.email"><![CDATA[E-Mail-Adresse(n)]]></item>
-		<item name="wcf.user.invitation.email.description"><![CDATA[Bitte gib die E-Mail-Adesse deines Freundes ein, den du einladen möchstest. Mehrere E-Mail-Adressen werden mit je einem Komma voneinander getrennt.]]></item>
+		<item name="wcf.user.invitation.email.description"><![CDATA[Bitte gib die E-Mail-Adesse deines Freundes ein, den du einladen möchstest. Mehrere E-Mail-Adressen werden mit je einem Komma voneinander getrennt.{if $max > 0} Du kannst noch maximal {if $left == 1}einen{else}{#$left}{/if} Freund{if $left != 1}e{/if} einladen.{/if}]]></item>
 		<item name="wcf.user.invitation.error.email.alreadyUsed"><![CDATA[Ein Benutzer mit der E-Mail-Adresse {$email} existiert bereits.]]></item>
+		<item name="wcf.user.invitation.error.email.invitationLimitExceeded"><![CDATA[Die maximale Anzahl an eingeladenen Freunden wurde überschritten.]]></item>
 		<item name="wcf.user.invitation.unansweredInvitationList"><![CDATA[Noch nicht akzeptierte Einladungen]]></item>
 		<item name="wcf.user.invitation.invitedMembers"><![CDATA[Akzeptierte Einladungen]]></item>
 	</category>
