@@ -5,10 +5,10 @@ require_once(WCF_DIR.'lib/data/DatabaseObject.class.php');
 /**
  * Represents an invitation.
  *
- * @author		Stefan Hahn
+ * @author	Stefan Hahn
  * @copyright	2011 Stefan Hahn
- * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
- * @package		com.leon.wcf.form.user.invitation
+ * @license	GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ * @package	com.leon.wcf.form.user.invitation
  * @subpackage	data.user.invitation
  * @category 	Community Framework
  */

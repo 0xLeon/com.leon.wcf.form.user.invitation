@@ -11,10 +11,10 @@ require_once(WCF_DIR.'lib/system/exception/PermissionDeniedException.class.php')
 /**
  * Shows the white list edit form.
  * 
- * @author		Stefan Hahn
+ * @author	Stefan Hahn
  * @copyright	2011 Stefan Hahn
- * @license		Simplified BSD License License <http://projects.swallow-all-lies.com/licenses/simplified-bsd-license.txt>
- * @package		com.leon.wcf.form.user.invitation
+ * @license	Simplified BSD License License <http://projects.swallow-all-lies.com/licenses/simplified-bsd-license.txt>
+ * @package	com.leon.wcf.form.user.invitation
  * @subpackage	form
  * @category 	Community Framework
  */

@@ -5,10 +5,10 @@ require_once(WCF_DIR.'lib/data/user/invitation/Invitation.class.php');
 /**
  * Provides functions to create and edit the data of an user invitation.
  *
- * @author		Stefan Hahn
+ * @author	Stefan Hahn
  * @copyright	2011 Stefan Hahn
- * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
- * @package		com.leon.wcf.form.user.invitation
+ * @license	GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ * @package	com.leon.wcf.form.user.invitation
  * @subpackage	data.user.invitation
  * @category 	Community Framework
  */

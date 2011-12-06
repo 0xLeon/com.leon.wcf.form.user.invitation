@@ -6,10 +6,10 @@ require_once(WCF_DIR.'lib/data/user/invitation/Invitation.class.php');
 /**
  * Represents a list of invitations.
  * 
- * @author		Stefan Hahn
+ * @author	Stefan Hahn
  * @copyright	2011 Stefan Hahn
- * @license		Simplified BSD License License <http://projects.swallow-all-lies.com/licenses/simplified-bsd-license.txt>
- * @package		com.woltlab.wcf.form.user.invitation
+ * @license	Simplified BSD License License <http://projects.swallow-all-lies.com/licenses/simplified-bsd-license.txt>
+ * @package	com.woltlab.wcf.form.user.invitation
  * @subpackage	data.user.invitation
  * @category 	Community Framework
  */
