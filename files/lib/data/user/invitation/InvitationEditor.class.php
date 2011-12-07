@@ -7,7 +7,7 @@ require_once(WCF_DIR.'lib/data/user/invitation/Invitation.class.php');
  *
  * @author	Stefan Hahn
  * @copyright	2011 Stefan Hahn
- * @license	GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ * @license	Simplified BSD License License <http://projects.swallow-all-lies.com/licenses/simplified-bsd-license.txt>
  * @package	com.leon.wcf.form.user.invitation
  * @subpackage	data.user.invitation
  * @category 	Community Framework
