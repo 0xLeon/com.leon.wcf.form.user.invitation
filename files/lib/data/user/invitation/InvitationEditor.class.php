@@ -51,7 +51,7 @@ class InvitationEditor extends Invitation {
 		WCF::getDB()->sendQuery($sql);
 		
 		$sql = "UPDATE	wcf".WCF_N."_user
-			SET		invitationCode = ''
+			SET		invitationCode = NULL
 			WHERE	invitationCode = ".$this->code;
 		WCF::getDB()->sendQuery($sql);
 		
