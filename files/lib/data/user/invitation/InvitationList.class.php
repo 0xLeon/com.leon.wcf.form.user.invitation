@@ -45,9 +45,9 @@ class InvitationList extends DatabaseObjectList {
 					recipient.username AS recipientUsername
 			FROM		wcf".WCF_N."_user_invitation invitation
 			LEFT JOIN	wcf".WCF_N."_user sender
-			ON			(sender.userID = invitation.senderID)
+			ON		(sender.userID = invitation.senderID)
 			LEFT JOIN	wcf".WCF_N."_user recipient
-			ON			(recipient.invitationCode = invitation.code)
+			ON		(recipient.invitationCode = invitation.code)
 			".$this->sqlJoins."
 			".(!empty($this->sqlConditions) ? "WHERE ".$this->sqlConditions : '')."
 			".(!empty($this->sqlOrderBy) ? "ORDER BY ".$this->sqlOrderBy : '');

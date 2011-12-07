@@ -19,11 +19,10 @@ class InvitationEditor extends Invitation {
 	 * @return 	Invitation
 	 */
 	public static function create($email) {
-		$sql = "INSERT 
+		$sql = "INSERT
 			INTO	wcf".WCF_N."_user_invitation
 				(time, senderID, email, code)
-			VALUES
-				(".TIME_NOW.", ".WCF::getUser()->userID.", '".escapeString(StringUtil::toLowerCase($email))."', ".UserRegistrationUtil::getActivationCode().")";
+			VALUES	(".TIME_NOW.", ".WCF::getUser()->userID.", '".escapeString(StringUtil::toLowerCase($email))."', ".UserRegistrationUtil::getActivationCode().")";
 		WCF::getDB()->sendQuery($sql);
 		
 		return new Invitation(WCF::getDB()->getInsertID());
@@ -34,7 +33,7 @@ class InvitationEditor extends Invitation {
 	 */
 	public function seal() {
 		$sql = "UPDATE wcf".WCF_N."_user_invitation
-			SET		isSealed = 1
+			SET	isSealed = 1
 			WHERE	invitationID = ".$this->invitationID;
 		WCF::getDB()->sendQuery($sql);
 	}
@@ -51,7 +50,7 @@ class InvitationEditor extends Invitation {
 		WCF::getDB()->sendQuery($sql);
 		
 		$sql = "UPDATE	wcf".WCF_N."_user
-			SET		invitationCode = NULL
+			SET	invitationCode = NULL
 			WHERE	invitationCode = ".$this->code;
 		WCF::getDB()->sendQuery($sql);
 		
