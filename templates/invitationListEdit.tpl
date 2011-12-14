@@ -81,7 +81,7 @@
 							{foreach from=$unansweredInvitationList item=$invitation}
 								<li class="deletable">
 									<span class="memberName"><span>{$invitation}</span></span>
-									<a href="index.php?form=InvitationListEdit&amp;cancel={@$invitation->invitationID}&amp;t={@SECURITY_TOKEN}{@SID_ARG_2ND}" title="{lang}wcf.user.invitation.cancel{/lang}" class="memberRemove deleteButton"><img src="{RELATIVE_WCF_DIR}icon/{*{icon}*}deleteS.png{*{/icon}*}" alt="" longdesc="{lang}wcf.user.invitation.cancel.sure{/lang}" /></a>
+									<a href="index.php?form=InvitationListEdit&amp;cancel={@$invitation->invitationID}&amp;t={@SECURITY_TOKEN}{@SID_ARG_2ND}" title="{lang}wcf.user.invitation.cancel{/lang}" class="memberRemove deleteButton"><img src="{icon}deleteS.png{/icon}" alt="" longdesc="{lang}wcf.user.invitation.cancel.sure{/lang}" /></a>
 								</li>
 							{/foreach}
 						</ul>
