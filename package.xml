@@ -2,9 +2,9 @@
 <package name="com.leon.wcf.form.user.invitation" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/package.xsd">
 	<packageinformation>
 		<packagename><![CDATA[Invitation System]]></packagename>
-		<packagedescription languagecode="de-informal"><![CDATA[Gibt deinen Benutzern die Möglichkeit, Freunde einzuladen.]]></packagedescription>
-		<packagedescription languagecode="de"><![CDATA[Gibt Ihren Benutzern die Möglichkeit, Freunde einzuladen.]]></packagedescription>
-		<packagedescription languagecode="en"><![CDATA[Give your user the ability to invite their friends.]]></packagedescription>
+		<packagedescription language="de-informal"><![CDATA[Gibt deinen Benutzern die Möglichkeit, Freunde einzuladen.]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Gibt Ihren Benutzern die Möglichkeit, Freunde einzuladen.]]></packagedescription>
+		<packagedescription language="en"><![CDATA[Give your user the ability to invite their friends.]]></packagedescription>
 		<packageurl><![CDATA[https://github.com/Leon-/com.leon.wcf.form.user.invitation]]></packageurl>
 		<version>1.1.0</version>
 		<date>2011-12-02</date>
