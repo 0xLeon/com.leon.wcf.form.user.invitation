@@ -56,4 +56,16 @@
 		<languages languagecode="de">de.xml</languages>
 		<languages languagecode="en">en.xml</languages>
 	</instructions>
+	
+	<instructions type="update" fromversion="1.1.0">
+		<files>files.tar</files>
+		<templates>templates.tar</templates>
+		<filesdelete>filesdelete.xml</filesdelete>
+		<eventlistener>eventlistener.xml</eventlistener>
+		<cronjobs>cronjobs.xml</cronjobs>
+		<groupoptions>groupoptions.xml</groupoptions>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+	</instructions>
 </package>
