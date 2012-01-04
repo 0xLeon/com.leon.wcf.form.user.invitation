@@ -27,7 +27,7 @@ class RegisterFormInviteListener implements EventListener {
 					self::$invitation = new InvitationEditor(null, null, $eventObj->additionalFields['invitationCode']);
 				}
 				else {
-					$eventObj->additionalFields['invitationCode'] = '';
+					$eventObj->additionalFields['invitationCode'] = 0;
 				}
 				
 				if (isset($_GET['email']) && !empty($_GET['email'])) $eventObj->email = $_GET['email'];
