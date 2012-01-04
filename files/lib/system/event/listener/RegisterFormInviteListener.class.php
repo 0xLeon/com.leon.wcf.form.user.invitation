@@ -50,7 +50,7 @@ class RegisterFormInviteListener implements EventListener {
 						throw new UserInputException('invitationCode');
 					}
 					
-					if (!Invitation::isValid($eventObj->email, $eventObj->additionalFields['invitationCode'])) {
+					if (!empty($eventObj->additionalFields['invitationCode']) && !Invitation::isValid($eventObj->email, $eventObj->additionalFields['invitationCode'])) {
 						throw new UserInputException('invitationCode', 'false');
 					}
 				}
