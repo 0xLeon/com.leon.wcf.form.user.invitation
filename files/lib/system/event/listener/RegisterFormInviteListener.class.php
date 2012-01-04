@@ -59,7 +59,9 @@ class RegisterFormInviteListener implements EventListener {
 				}
 			}
 			else if ($eventName === 'saved') {
-				self::$invitation->seal();
+				if (self::$invitation !== null) {
+					self::$invitation->seal();
+				}
 			}
 		}
 	}
