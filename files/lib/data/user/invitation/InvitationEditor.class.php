@@ -32,7 +32,7 @@ class InvitationEditor extends Invitation {
 	 * Saves this invitation from further changes.
 	 */
 	public function seal() {
-		$sql = "UPDATE wcf".WCF_N."_user_invitation
+		$sql = "UPDATE	wcf".WCF_N."_user_invitation
 			SET	isSealed = 1
 			WHERE	invitationID = ".$this->invitationID;
 		WCF::getDB()->sendQuery($sql);

@@ -9,7 +9,7 @@
 		<version>1.1.1</version>
 		<date>2011-12-14</date>
 		<isunique>1</isunique>
-        <standalone>0</standalone>
+		<standalone>0</standalone>
 		<plugin>com.woltlab.wcf.form.user</plugin>
 	</packageinformation>
 	<authorinformation>
@@ -40,7 +40,6 @@
 		<languages languagecode="de">de.xml</languages>
 		<languages languagecode="en">en.xml</languages>
 	</instructions>
-	
 	<instructions type="update" fromversion="1.0.*">
 		<files>files.tar</files>
 		<acptemplates>acptemplates.tar</acptemplates>
@@ -57,7 +56,6 @@
 		<languages languagecode="de">de.xml</languages>
 		<languages languagecode="en">en.xml</languages>
 	</instructions>
-	
 	<instructions type="update" fromversion="1.1.0">
 		<files>files.tar</files>
 		<templates>templates.tar</templates>
@@ -70,7 +68,6 @@
 		<languages languagecode="de">de.xml</languages>
 		<languages languagecode="en">en.xml</languages>
 	</instructions>
-	
 	<instructions type="update" fromversion="1.1.1">
 		<files>files.tar</files>
 		<sql>update_111.sql</sql>

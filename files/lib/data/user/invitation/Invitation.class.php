@@ -38,9 +38,9 @@ class Invitation extends DatabaseObject {
 						recipient.username AS recipientUsername
 				FROM		wcf".WCF_N."_user_invitation invitation
 				LEFT JOIN	wcf".WCF_N."_user sender
-				ON			(sender.userID = invitation.senderID)
+				ON		(sender.userID = invitation.senderID)
 				LEFT JOIN	wcf".WCF_N."_user recipient
-				ON			(recipient.invitationCode = invitation.code)
+				ON		(recipient.invitationCode = invitation.code)
 				WHERE 	".$sqlCondition;
 			$row = WCF::getDB()->getFirstRow($sql);
 		}
