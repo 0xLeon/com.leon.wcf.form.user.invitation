@@ -7,7 +7,7 @@ require_once(WCF_DIR.'lib/data/user/invitation/InvitationList.class.php');
  * Deletes accepted invitations with no user associated.
  * 
  * @author 	Stefan Hahn
- * @copyright	2011 Stefan Hahn
+ * @copyright	2011-2012 Stefan Hahn
  * @license	Simplified BSD License License <http://projects.swallow-all-lies.com/licenses/simplified-bsd-license.txt>
  * @package	com.leon.wcf.form.user.invitation
  * @subpackage	system.cronjob
