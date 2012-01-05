@@ -6,8 +6,8 @@
 		<packagedescription language="de"><![CDATA[Gibt Ihren Benutzern die Möglichkeit, Freunde einzuladen.]]></packagedescription>
 		<packagedescription language="en"><![CDATA[Give your user the ability to invite their friends.]]></packagedescription>
 		<packageurl><![CDATA[https://github.com/Leon-/com.leon.wcf.form.user.invitation]]></packageurl>
-		<version>1.1.1</version>
-		<date>2011-12-14</date>
+		<version>1.1.2</version>
+		<date>2012-01-05</date>
 		<isunique>1</isunique>
 		<standalone>0</standalone>
 		<plugin>com.woltlab.wcf.form.user</plugin>
