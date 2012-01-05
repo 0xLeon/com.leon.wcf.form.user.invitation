@@ -45,6 +45,7 @@
 		<files>files.tar</files>
 		<acptemplates>acptemplates.tar</acptemplates>
 		<templates>templates.tar</templates>
+		<sql>update_111.sql</sql>
 		<filesdelete>filesdelete.xml</filesdelete>
 		<eventlistener>eventlistener.xml</eventlistener>
 		<cronjobs>cronjobs.xml</cronjobs>
@@ -60,6 +61,7 @@
 	<instructions type="update" fromversion="1.1.0">
 		<files>files.tar</files>
 		<templates>templates.tar</templates>
+		<sql>update_111.sql</sql>
 		<filesdelete>filesdelete.xml</filesdelete>
 		<eventlistener>eventlistener.xml</eventlistener>
 		<cronjobs>cronjobs.xml</cronjobs>
@@ -67,5 +69,10 @@
 		<languages languagecode="de-informal">de-informal.xml</languages>
 		<languages languagecode="de">de.xml</languages>
 		<languages languagecode="en">en.xml</languages>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.1.1">
+		<files>files.tar</files>
+		<sql>update_111.sql</sql>
 	</instructions>
 </package>
