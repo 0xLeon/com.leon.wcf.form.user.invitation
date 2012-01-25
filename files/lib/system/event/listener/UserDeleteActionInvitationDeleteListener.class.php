@@ -1,6 +1,7 @@
 <?php
 // wcf imports
 require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
+require_once(WCF_DIR.'lib/data/user/User.class.php');
 require_once(WCF_DIR.'lib/data/user/invitation/InvitationEditor.class.php');
 
 /**

@@ -58,13 +58,13 @@ class Invitation extends DatabaseObject {
 	 * @return	boolean
 	 */
 	public static function isValid($email, $code) {
-		$sql = "SELECT	COUNT(*) AS invitations
+		$sql = "SELECT	COUNT(*) AS count
 			FROM 	wcf".WCF_N."_user_invitation
 			WHERE	email = '".escapeString(StringUtil::toLowerCase($email))."'
 				AND code = ".intval($code)."
 				AND isSealed = 0";
 		$row = WCF::getDB()->getFirstRow($sql);
 		
-		return ($row['invitations'] == 1);
+		return (intval($row['count']) === 1);
 	}
 }

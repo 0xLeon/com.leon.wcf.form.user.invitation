@@ -39,7 +39,7 @@ class RegisterFormInviteListener implements EventListener {
 				}
 			}
 			else if ($eventName === 'assignVariables') {
-				WCF::getTPL()->assign('invitationCode', $eventObj->additionalFields['invitationCode']);
+				WCF::getTPL()->assign('invitationCode', (($eventObj->additionalFields['invitationCode'] === 0) ? '' : $eventObj->additionalFields['invitationCode']));
 			}
 			else if ($eventName === 'show') {
 				WCF::getTPL()->append('additionalFields', WCF::getTPL()->fetch('registerInviteField'));
