@@ -20,9 +20,16 @@ class RegisterFormInviteListener implements EventListener {
 	 * @see EventListener::execute()
 	 */
 	public function execute($eventObj, $className, $eventName) {
-		if (MODULE_INVITATION) {
+		if (!MODULE_INVITATION) {
+			return;
+		}
+		
+		if ($className === 'RegisterForm') {
 			if ($eventName === 'readParameters') {
-				if (isset($_GET['invitationCode']) && !empty($_GET['invitationCode'])) {
+				if (WCF::getSession()->getVar('invitationCode') !== null) {
+					$eventObj->additionalFields['invitationCode'] = intval(WCF::getSession()->getVar('invitationCode'));
+				}
+				else if (isset($_GET['invitationCode']) && !empty($_GET['invitationCode'])) {
 					$eventObj->additionalFields['invitationCode'] = intval($_GET['invitationCode']);
 					self::$invitation = new InvitationEditor(null, null, $eventObj->additionalFields['invitationCode']);
 				}
@@ -30,7 +37,12 @@ class RegisterFormInviteListener implements EventListener {
 					$eventObj->additionalFields['invitationCode'] = 0;
 				}
 				
-				if (isset($_GET['email']) && !empty($_GET['email'])) $eventObj->email = $_GET['email'];
+				if (WCF::getSession()->getVar('email') !== null) {
+					$eventObj->email = WCF::getSession()->getVar('email');
+				}
+				else if (isset($_GET['email']) && !empty($_GET['email'])) {
+					$eventObj->email = $_GET['email'];
+				}
 			}
 			else if ($eventName === 'readFormParameters') {
 				if (isset($_POST['invitationCode']) && !empty($_POST['invitationCode'])) {
@@ -59,10 +71,17 @@ class RegisterFormInviteListener implements EventListener {
 				}
 			}
 			else if ($eventName === 'saved') {
+				WCF::getSession()->unregister('email');
+				WCF::getSession()->unregister('invitationCode');
+				
 				if (is_object(self::$invitation) && (self::$invitation instanceof InvitationEditor)) {
 					self::$invitation->seal();
 				}
 			}
+		}
+		else if ($className === 'RegisterPage') {
+			if (isset($_GET['email']) && !empty($_GET['email'])) WCF::getSession()->register('email', $_GET['email']);
+			if (isset($_GET['invitationCode']) && !empty($_GET['invitationCode'])) WCF::getSession()->register('invitationCode', intval($_GET['invitationCode']));
 		}
 	}
 }

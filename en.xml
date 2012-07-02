@@ -44,7 +44,7 @@
 
 You have been invited by {$username} to register on page {PAGE_TITLE}. If you agree with that, 
 all you have to do is entering the link below in your browser:
-{PAGE_URL}/index.php?page=Register&action=register&email={$emailUrlEncoded}&invitationCode={$invitationCode}
+{PAGE_URL}/index.php?page=Register&email={$emailUrlEncoded}&invitationCode={$invitationCode}
 
 Be aware that this invitation is valid with the given e-mail adress below only. If you want to use 
 another e-mail adress, you can change your setting after the successful registration.
