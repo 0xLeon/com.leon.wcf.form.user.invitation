@@ -6,7 +6,7 @@
 		<packagedescription language="de"><![CDATA[Gibt Ihren Benutzern die Möglichkeit, Freunde einzuladen.]]></packagedescription>
 		<packagedescription language="en"><![CDATA[Give your user the ability to invite their friends.]]></packagedescription>
 		<packageurl><![CDATA[https://github.com/Leon-/com.leon.wcf.form.user.invitation]]></packageurl>
-		<version>1.1.3</version>
+		<version>1.1.4</version>
 		<date>2012-07-02</date>
 		<isunique>1</isunique>
 		<standalone>0</standalone>
@@ -79,6 +79,11 @@
 	<instructions type="update" fromversion="1.1.2">
 		<files>files.tar</files>
 		<eventlistener>eventlistener.xml</eventlistener>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+	</instructions>
+	<instructions type="update" fromversion="1.1.3">
 		<languages languagecode="de-informal">de-informal.xml</languages>
 		<languages languagecode="de">de.xml</languages>
 		<languages languagecode="en">en.xml</languages>
