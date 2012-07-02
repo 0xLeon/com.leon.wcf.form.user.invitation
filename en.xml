@@ -50,7 +50,7 @@ Be aware that this invitation is valid with the given e-mail adress below only. 
 another e-mail adress, you can change your setting after the successful registration.
 
 The invitel e-mail adress is: 		{$email}
-Your invitation code is: 			{$invitationCode}
+Your invitation code is: 		{$invitationCode}
 
 If you have any problem with registration, please send an e-mail to the administrator: {MAIL_ADMIN_ADDRESS} 
 If you are not interested in a registration at {PAGE_TITLE}, you can ignore this e-mail.

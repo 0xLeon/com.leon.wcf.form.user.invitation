@@ -52,7 +52,7 @@ Sie eine andere E-Mail-Adresse verwenden wollen, können Sie diese nach der abge
 Registrierung ändern.
 
 Die eingeladene E-Mail-Adresse lautet: 		{$email}
-Ihr Einladungscode lautet: 					{$invitationCode}
+Ihr Einladungscode lautet: 			{$invitationCode}
 
 Wenn Sie Probleme mit der Registrierung haben, wenden Sie sich an den Administrator: {MAIL_ADMIN_ADDRESS} 
 Sollten Sie kein Interesse an einer Registrierung auf der Website: {PAGE_TITLE} haben, können sie diese 
