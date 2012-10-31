@@ -18,14 +18,12 @@ class InvitationsCleanupCronjob implements Cronjob {
 	 * @see Cronjob::execute()
 	 */
 	public function execute($data) {
-		$sql = "DELETE
-			FROM	wcf".WCF_N."_user_invitation invitation
-			WHERE	invitation.code NOT IN (
-					SELECT	invitationCode
-					FROM	wcf".WCF_N."_user
-					WHERE	invitationCode > 0
-				)
-				AND invitation.isSealed = 1";
-		WCF::getDB()->registerShutdownUpdate($sql);
+		$sql = "DELETE		invitation.*
+			FROM		wcf".WCF_N."_user_invitation invitation
+			LEFT JOIN 	wcf".WCF_N."_user wcfUser
+			ON		invitation.code = wcfUser.invitationCode
+			WHERE		wcfUser.userID IS NULL
+					AND invitation.isSealed = 1";
+		WCF::getDB()->sendQuery($sql);
 	}
 }
