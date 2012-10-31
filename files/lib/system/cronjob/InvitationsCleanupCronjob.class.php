@@ -1,7 +1,6 @@
 <?php
 // wcf imports
 require_once(WCF_DIR.'lib/data/cronjobs/Cronjob.class.php');
-require_once(WCF_DIR.'lib/data/user/invitation/InvitationList.class.php');
 
 /**
  * Deletes accepted invitations with no user associated.
