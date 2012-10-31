@@ -61,7 +61,7 @@ E-Mail ignorieren.
 Vielen Dank,
 Ihr {PAGE_TITLE} Team.]]></item>
 		<item name="wcf.user.register.invitation.mail.subject"><![CDATA[Sie wurden eingeladen, sich auf {PAGE_TITLE} zu registrieren]]></item>
-		<item name="wcf.user.register.invitation.code"><![CDATA[9-Stelliger Einladungscode]]></item>
+		<item name="wcf.user.register.invitation.code"><![CDATA[9-stelliger Einladungscode]]></item>
 		<item name="wcf.user.register.invitation.code.description"><![CDATA[Den Einladungscode finden Sie in der Einladungs-E-Mail, die Ihnen durch ein bestehendes Mitglied zugeschickt wurde. Der Einladungscode ist nur zusammen mit der E-Mail-Adresse gültig, an die die Einladung verschickt wurde.]]></item>
 		<item name="wcf.user.register.invitation.code.optional"><![CDATA[Ein Einladungscode ist für eine erfolgreiche Registrierung <em>nicht</em> notwendig.]]></item>
 		<item name="wcf.user.register.invitation.code.necessary"><![CDATA[Für eine erfolgreiche Registrierung <strong>müssen</strong> Sie einen gültigen Einladungscode eingeben.]]></item>
